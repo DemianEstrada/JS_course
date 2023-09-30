@@ -1,0 +1,70 @@
+//Exercise
+
+//a
+'My name is: '
+
+//b
+'Demian'
+
+//c
+'My name is: ' + 'Demian'
+
+//d
+'Total cost: $8'
+
+//e
+`Total cost: $${5+3}`
+
+//f
+alert(`Total cost: $${5+3}`);
+
+//g
+'Total cost: $' + (599+295)/100
+
+//h
+`Total cost: $${(599+295)/100}`
+
+//i
+alert(`Total cost: $${(599+295)/100}
+Thank you, come again!`);
+
+//k
+`Items(${2+2}): $${(2095*2 + 799*2)/100}`
+
+//l
+`Shipping and handling: $${(499+499)/100}`
+
+//m
+`Total before tax: $${(2095*2 + 799*2 + 499+499)/100}`
+
+//n
+`Estimated tax (10%): $${Math.round((2095*2 + 799*2 + 499+499)*.1)/100}`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
