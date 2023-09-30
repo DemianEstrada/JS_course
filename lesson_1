@@ -1,1 +1,32 @@
+// Exercises
+
+// a
+alert('Good morning');
+
+//b
+alert('Demian');
+
+//c
+10 + 5
+
+//d
+20-5
+
+//e
+2+2-5
+
+//f
+document.body.innerHTML = 'Good morning!'
+
+//g
+document.body.innerHTML = 'Demian'
+
+//h
+10+8+20
+
+//i
+100-20-50+200
+
+//j
+document.body.innerHTML = ''
 
