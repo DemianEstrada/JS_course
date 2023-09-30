@@ -16,10 +16,10 @@ alert('Demian');
 2+2-5
 
 //f
-document.body.innerHTML = 'Good morning!'
+document.body.innerHTML = 'Good morning!';
 
 //g
-document.body.innerHTML = 'Demian'
+document.body.innerHTML = 'Demian';
 
 //h
 10+8+20
@@ -28,5 +28,5 @@ document.body.innerHTML = 'Demian'
 100-20-50+200
 
 //j
-document.body.innerHTML = ''
+document.body.innerHTML = '';
 
