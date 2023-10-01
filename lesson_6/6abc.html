@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  
+  <body>
+
+    <script>
+      const name = 'Demian';
+      let date = new Date();
+      let hour = date.getHours();
+      
+      if (hour >=6 && hour <13) {
+        console.log(`Good morning ${name}!`);
+      } else if (hour >= 13 && hour < 18) {
+        console.log(`Good afternoon ${name}!`);
+      } else {
+        console.log(`Good night ${name}!`);
+      }
+    </script>
+
+  </body>
+</html>
