@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  
+  <body>
+
+    <script>
+
+      function comparePrice(p1, p2){
+        if (p1.price>p2.price){
+          return p2;
+        } else{
+          return p1;
+        }
+      }
+
+      const basketball = {
+        name : 'basketball',
+        price: 2095
+      }
+
+      const football = {
+        name: 'football',
+        price: 1850
+      }
+
+      console.log(comparePrice(basketball, football));
+
+    </script>
+
+  </body>
+</html>
