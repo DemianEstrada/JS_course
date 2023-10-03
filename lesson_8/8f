@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  
+  <body>
+
+    <script>
+
+      console.log('TEXT'.toLowerCase());
+
+    </script>
+
+  </body>
+</html>
