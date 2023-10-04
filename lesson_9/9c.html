@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  
+  <body>
+
+    <button class="js-heads" onclick="
+      select('Heads')
+      ">
+      Heads
+    </button>
+
+    <button class="js-tails" onclick="
+    select('Tails')
+    ">
+      Tails
+    </button>
+
+    <p class="js-text"></p>
+
+    <script>
+
+      function select(selection){
+        document.querySelector('.js-text')
+         .innerHTML= `You chose: ${selection}`;
+      }
+
+    </script>
+
+  </body>
+</html>
