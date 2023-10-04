@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  
+  <body>
+
+    <input placeholder="Name" class="js-intxt" onkeydown="
+      event.key === 'Enter' && submitName();
+      ">
+
+    <button class="js-subbut" onclick="
+    submitName();
+    ">Submit</button>
+    <p class="js-text"></p>
+
+    <script>
+
+      function submitName(){
+        let text = document.querySelector('.js-intxt').value;
+
+        document.querySelector('.js-text')
+          .innerHTML= `Your name is ${text}`;
+
+      }
+
+    </script>
+
+  </body>
+</html>
