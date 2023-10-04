@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  
+  <body>
+
+    <input placeholder="Text" class="js-intxt" onkeyup="
+      submitText();
+      ">
+
+    <p class="js-text"></p>
+
+    <script>
+
+      function submitText(){
+        let text = document.querySelector('.js-intxt').value;
+
+        document.querySelector('.js-text')
+          .innerHTML = `${text}`;
+
+      }
+
+    </script>
+
+  </body>
+</html>
