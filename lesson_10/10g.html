@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      body{
+        font-family: Arial;
+      }
+
+      .is-toggled{
+        background-color: black;
+        color: white;
+      }
+
+      .button{
+        background-color: rgb(225,225,225,);
+        border: none;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <button class="js-gaming-button button" onclick="
+
+      toggle(gaming);
+      ">Gaming</button>
+
+    <button class="js-music-button button" onclick="
+      toggle(music);
+      ">Music</button>
+
+    <button class="js-tech-button button" onclick="
+      toggle(tech);
+      ">Tech</button>
+
+    <script>
+
+      function pretoggle(){
+        gaming.classList.remove('is-toggled')
+        music.classList.remove('is-toggled')
+        tech.classList.remove('is-toggled')
+      }
+
+      function toggle(button){
+        button.classList.contains('is-toggled')? button.classList.remove('is-toggled'):(pretoggle(),button.classList.add('is-toggled'));
+      }
+
+      const gaming = document.querySelector('.js-gaming-button');
+
+      const music = document.querySelector('.js-music-button');
+
+      const tech = document.querySelector('.js-tech-button');
+
+
+
+
+    </script>
+
+  </body>
+</html>
