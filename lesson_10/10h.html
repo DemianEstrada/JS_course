@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM projects</title>
+
+    <style>
+
+      body{
+        font-family: Arial;
+      }
+
+      .subbutton{
+        border: none;
+        background-color: red;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .subscribed{
+        border: none;
+        background-color: rgb(240,240,240);
+        color: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+      .cost-input{
+        font-size: 15px;
+        padding: 10px;
+      }
+      
+      .calc-button{
+        padding: 11px 15px;
+        background-color: green;
+        border: none;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .errorText{
+        color: red;
+      }
+
+    </style>
+
+  </head>
+  
+  <body>
+    <p>
+      YouTube Subscribe Button
+    </p>
+
+    <button onclick="
+    subscribe();
+    " class="js-subbutton subbutton">
+    Subscribe</button>
+
+    <p>Amazon Shipping Calculator</p>
+
+    <p>Orders under $40 = +$10 shipping.</p>
+
+    <p>Orders over $40 = FREE shipping.</p>
+
+    <input  placeholder="Cost of order" class="js-costin cost-input" onkeydown="
+    event.key === 'Enter' && calculate();
+    ">
+
+    <button class="calc-button" onclick="
+    calculate();
+    ">Calculate</button>
+
+    <p class="js-total"></p>
+
+    <script>
+      function subscribe(){
+        
+        const subbutton = document.querySelector('.js-subbutton');
+
+        subbutton.innerText === 'Subscribe'? subbutton.innerHTML = 'Subscribed': subbutton.innerHTML='Subscribe';
+
+        subbutton.innerText !== 'Subscribe'? subbutton.classList.add('subscribed'):subbutton.classList.remove('subscribed')
+        
+      }
+      
+      function calculate(){
+        let cost = Number(document.querySelector('.js-costin').value);
+
+        if(cost <=0){
+          document.querySelector('.js-total')
+            .innerHTML = `Error: cost cannot be $0 or below`;
+          document.querySelector('.js-total').classList.add(`errorText`);
+        }else if(cost>40){
+          document.querySelector('.js-total').classList.remove(`errorText`);
+          document.querySelector('.js-total')
+            .innerHTML = `$${Math.round(cost*100)/100}`;
+        }else{
+          document.querySelector('.js-total').classList.remove(`errorText`);
+          cost += 10;
+          document.querySelector('.js-total').innerHTML = `$${Math.round(cost*100)/100}`;
+        }
+      }
+
+    </script>
+
+  </body>
+</html>
