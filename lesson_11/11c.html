@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+    <script>
+
+      function swap(array){
+
+        let lastValue = array[array.length-1];
+
+        let firstValue =array[0];
+
+        array[array.length-1] = firstValue;
+
+        array[0] = lastValue;
+
+        console.log(array);
+
+        return array;
+      }
+
+      const nums = [1,20,22,24,5];
+      const words = ['hi','hello', 'good'];
+
+      swap(nums);
+      swap(words);
+
+    </script>
+
+  </body>
+</html>
