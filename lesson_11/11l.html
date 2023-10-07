@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+    <script>
+
+      const prueba1=[1,2,3];
+      const prueba2 =[-2,-1,0,99];
+      const prueba3 = [];
+      const prueba4=[1];
+
+      function minMax(array){
+        const result = {
+          min: 0,
+          max: 0,
+        };
+
+        if (array.length === 0){
+          result.max = null;
+          result.min = null;
+        }else if(array.length === 1){
+          result.max = array[0];
+          result.min = array[0];
+        }else{
+          result.max = Math.max(...array);
+          result.min = Math.min(...array);
+        }
+
+        console.log(result);
+
+        return result;
+
+      }
+
+      minMax(prueba1);
+      minMax(prueba2);
+      minMax(prueba3);
+      minMax(prueba4);
+
+    </script>
+
+  </body>
+</html>
