@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+    <script>
+
+    const wordsArray = [
+      "apple",
+      "pear",
+      "banana",
+      "orange",
+      "grape",
+      "watermelon",
+      "kiwi",
+      "lemon",
+      "strawberry",
+      "cherry",
+      "apple",
+      "pear",
+      "banana",
+      "mango",
+      "orange",
+      "raspberry",
+      "grape",
+      "papaya",
+      "watermelon",
+    ];
+
+
+
+      function countWords(array){
+        const words = {};
+
+        for (let i = 0; i<array.length;i++){
+
+          const word = array[i];
+
+          words[word] ? words[word]++ : words[word] = 1;
+
+        }
+
+        console.log(words);
+
+      }
+
+      countWords(wordsArray);
+
+    </script>
+
+  </body>
+</html>
