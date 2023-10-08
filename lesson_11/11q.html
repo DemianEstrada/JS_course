@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+    <script>
+
+    const randomWords1 = [
+      "Bicycle",
+      "Lighthouse",
+      "Unicorn",
+      "Dragon",
+      "Mountain",
+      "Sapphire",
+      "Sunflower",
+      "Whisper",
+      "Avalanche",
+      "Harmony"
+    ];
+
+    const randomWords2 = [
+      "Carwash",
+      "Journey",
+      "Flamingo",
+      "Cascade",
+      "Rainbow",
+      "Pineapple",
+      "Wonderland",
+      "Starlight",
+      "Mystique",
+      "Champagne"
+    ];
+
+
+    function searchWord(array,word){
+      let aux=0;
+      for(let i =0; i<array.length;i++){
+        if (array[i]===word){
+          console.log(i);
+          aux++;
+          break;
+        }
+      }
+      aux!==1 &&console.log(-1);
+      return;
+    }
+
+    searchWord(randomWords1,'Rainbow');
+    searchWord(randomWords2,'Rainbow');
+
+    </script>
+
+  </body>
+</html>
