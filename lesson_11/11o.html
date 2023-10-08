@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+    <script>
+
+    const arrayWithSearch = [
+      "Search",
+      "Investigate",
+      "Explore",
+      "Examine",
+      "Seek"
+    ];
+    const arrayWithoutSearch = [
+      "Investigate",
+      "Explore",
+      "Examine",
+      "Seek",
+      "Probe"
+    ];
+
+    function searchSearch(array){
+      let aux=0;
+      for(let i =0; i<array.length;i++){
+        array[i]==='Search'&&(aux++,console.log(i));
+      }
+      aux===0&&console.log(-1)
+    }
+
+    searchSearch(arrayWithSearch);
+    searchSearch(arrayWithoutSearch);
+
+    </script>
+
+  </body>
+</html>
