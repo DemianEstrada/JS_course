@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+    <script>
+
+    const foodArray = [
+      'Egg',
+      'Apple',
+      'Banana',
+      'Cinnamon',
+      'Donut',
+      'Egg',
+      'Fruit Salad',
+      'Egg',
+      'Egg',
+      'Ice Cream'
+    ];
+
+
+
+    function removeEgg(array){
+      const result = []
+      let aux=0;
+      for(let i =0; i<array.length;i++){
+        if(array[i]==='Egg'&&aux<2){
+          aux++;
+          continue
+        }
+        result.push(array[i]);
+      }
+      return result;
+    }
+
+    removeEgg(foodArray);
+    console.log(removeEgg(foodArray));
+    </script>
+
+  </body>
+</html>
