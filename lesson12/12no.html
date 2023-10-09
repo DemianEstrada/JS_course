@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+    <script>
+
+    const foodArray = [
+      'Egg',
+      'Apple',
+      'Banana',
+      'Egg',
+      'Donut',
+      'Egg',
+      'Fruit Salad',
+      'Grapes',
+      'Egg',
+      'Ice Cream'
+    ];
+
+    function removeEggs(array){
+      count =0;
+      array = array.filter(element => {
+        if(count<2 && element==='Egg'){
+          count++;
+          return false;
+        }
+        return true
+      })
+      return array
+    }
+
+    console.log(removeEggs(foodArray));
+
+    </script>
+
+  </body>
+</html>
