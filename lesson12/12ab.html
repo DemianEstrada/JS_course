@@ -10,12 +10,17 @@
 
       const add = function(){
         console.log(2+3);
-
+        return;
       }
 
-      add();
-      add();
+      function runTwice(fun){
+        fun();
+        fun();
+        return;
+      }
 
+      runTwice(add);
+      runTwice(function(){console.log('12b')});
     </script>
 
   </body>
