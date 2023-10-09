@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+
+    <button class="js-cart" onclick="
+      add();
+      ">Add</button>
+      <p class="js-text"></p>
+
+    <script>
+
+      let isrunning = false
+      let id;
+
+      function add(){
+
+        if (isrunning===true){
+          clearTimeout(id);
+        }
+
+        id = setTimeout(()=>{
+        document.querySelector('.js-text')
+          .innerHTML=''
+        isrunning=false
+        }, 2000)
+        document.querySelector('.js-text')
+          .innerHTML='Added'
+
+        isrunning=true
+      
+      }
+    </script>
+
+  </body>
+</html>
