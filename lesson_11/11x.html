@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/l11-todolist.css">
+  </head>
+  
+  <body>
+    
+    <p>Todo List</p>
+
+    <div class="inputs">
+      <input class="input-space js-input" placeholder="Todo name" onkeydown="event.key==='Enter' && addAct()">
+
+      <input class="js-dateLimit input-space" type="date">
+    
+      <button class="add-button" onclick="
+        addAct();
+      ">Add</button>
+    </div>
+
+    
+
+    <div class='js-list list-grid'></div>
+
+    <script src="scripts/l11-todolist.js"></script>
+
+  </body>
+</html>
