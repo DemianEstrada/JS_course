@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+    <script>
+
+      function countPositive (array){
+        let count=0;
+        array.forEach(element => {
+          if(element>=0){
+            count++;
+          }
+        });
+        return count;
+      }
+
+      console.log(countPositive([1,2,3]))
+
+    </script>
+
+  </body>
+</html>
