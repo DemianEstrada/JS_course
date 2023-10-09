@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  
+  <body>
+
+    <button class="js-cart" onclick="
+      messages++;
+      ">Add
+    </button>
+    
+    <button class="js-cart" onclick="
+      remove();
+      ">Remove
+    </button>
+
+    <script>
+
+      let messages = 2;
+
+      function remove(){
+
+        messages -1 >=0&& messages--;        
+      }
+
+
+      setInterval(()=>{
+        if (messages>0){
+          document.title = `(${messages}) new messages`;
+        }else(
+          document.title = 'App'
+        )
+      }, 1000);
+
+
+    </script>
+
+  </body>
+</html>
